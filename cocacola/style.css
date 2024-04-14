@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*
+{
+     font-family: "Poppins", sans-serif;
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     justify-content: center;
+     
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background: #474747dc;
+    
+}
+.containe{
+    display: flex;
+    align-items: right; /* Opcional: alinea verticalmente el texto con la imagen */
+  }
+  .containe img {
+    width: 381px;
+    margin: 1px 22px 6px 2px;
+}
+.containea img {
+    width: 100px;
+    margin: 7px 2px 6px 550px;
+}
+
+section
+{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    background: #161616;
+    
+}
+section .circle
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #e51e2a;
+    clip-path: circle(70% at right -20%);
+    
+}
+header
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding:40px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+ }
+ header .logo
+ {
+    position: relative;
+    max-width: 150px;
+ }
+ header .navegation
+ {
+    position: relative;
+    display: flex;
+    
+ }
+ header .navegation li
+ {
+    list-style: none;
+ }
+ header .navegation li a
+ {
+    display: inline-block;
+    color: #fff;
+    font-weight: 500; 
+    text-decoration: none;
+    margin-left: 40px;
+ }
+ .content
+ {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+ }
+ .content .textbox
+ {
+    position: relative;
+    max-width: 600px;
+    margin-right: 20px;
+    justify-content: left;
+   
+ }
+ .content .textbox h2
+ {
+   color: #ffeeee;
+   font-size: 3em;
+   margin-bottom: 10px;
+   line-height: 1.4em;
+   font-weight: 700;
+
+ }
+ .content .textbox p
+ {
+    color: #ffffff;
+    justify-content: space-between;
+    
+}
+
+ .content .textbox a
+ {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 8px 20px;
+    background:#EC2912 ;
+    color: #ffffff;
+    border-radius: 40px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
+
+.sci
+{
+    position: absolute;
+    bottom: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sci li{
+    list-style: none;
+    
+}
+.sci li a
+{
+  display: inline-block; 
+  margin-left: 15px;
+  background: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  transition: 0.2s ease-in-out;
+}
+.sci li a:hover
+{
+  background: #D15B4D ;
+  width: 50px;
+  transform: translate(-10px);  
+}
+.sci li a img{
+    filter: invert(1);
+    transform: scale(0.5);
+}
+
+
+swiper-container {
+    width: 100%;
+    padding-top: 50px;
+    background-image: none;
+    padding-bottom: 50px;
+  }
+
+  swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 180px;
+    height: 460px;
+    display: flex;
+    justify-content: center;
+  }
+
+.content .imgBox{
+   width: 500px;
+    display: flex;
+    justify-content: flex-end; 
+}
+.content .imgBox img{
+    max-width: 150px;
+
+}
+
+swiper-slide img{
+position: absolute;
+bottom: 0;
+max-height: 100%;
+}
+
+swiper-container  swiper-slide-shadow-left,
+swiper-container  swiper-slide-shadow-right
+{
+    background-image: none;
+}
+
+
+@media (max-width: 991px) 
+{
+    header
+    {
+        padding: 40px;
+    }
+    section
+    {
+        padding: 150px 40px;
+    }
+    .sci{
+        left: 40px;
+    }
+    .content
+ {
+    flex-direction: column;
+ }
+
+ .content .textbox,
+ .content .imgbox
+ {
+    max-width: 100%;  
+   
+ }
+
+ swiper-slide {
+    height: 100px;
+  }
+
+header .navegation{
+    display: none;
+}
+.toggle{
+    position: relative;
+    width: 30px;
+    height: 30px;
+    background: url(menu.png);
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    z-index: 1000;
+}
+.toggle.active{
+    background: url(close.png);
+    background-size: 25px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+header .navegation.active{
+    display: flex;
+    top: 0;
+    width: 100%;
+    background: #ff1414e6;
+    height: 100%;
+    position: fixed;
+}
+
+}
+
+
+
+
+  
+
+
